@@ -22,7 +22,8 @@ public class Login {
 		// To maximize the browser window
 		driver.manage().window().maximize();
 		// Enter the valid username to login
-		driver.findElement(By.id("username")).sendKeys("DemoSalesManager");
+		driver.findElementByXPath("//input[@id='username']").sendKeys("Demosalesmanager");
+//		driver.findElement(By.id("username")).sendKeys("DemoSalesManager");
 		// Enter the valid password to login
 		driver.findElementByName("PASSWORD1").sendKeys("crmsfa");
 		// Now, click on the login button
